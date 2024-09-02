@@ -19,7 +19,7 @@ def berita_popular():
     titles = popular_area.find_all(attrs={'class':'media__title'})
     images = popular_area.find_all(attrs={'class':'media__image'})
 
-    # call html file with argumen gambar=images
+    # call html file with argumen gambars=images
     return render_template('index.html', gambars=images)
 
 if __name__ == '__main__':
