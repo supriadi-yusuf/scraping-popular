@@ -1,0 +1,5 @@
+create virtual env (.env):
+python3 -m venv .venv
+
+run virtual env :
+source .venv/bin/activate
