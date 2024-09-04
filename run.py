@@ -22,5 +22,12 @@ def berita_popular():
     # call html file with argumen gambars=images
     return render_template('index.html', gambars=images)
 
+@app.route('/idr-rates')
+def idr_rates():
+    source = requests.get('https://www.floatrates.com/daily/idr.json')
+    json_data = source.json()
+
+    return render_template('idr-rates.html', datas=json_data)
+
 if __name__ == '__main__':
     app.run(debug=True)
