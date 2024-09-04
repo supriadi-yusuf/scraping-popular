@@ -20,7 +20,7 @@ def berita_popular():
     images = popular_area.find_all(attrs={'class':'media__image'})
 
     # call html file with argumen gambars=images
-    return render_template('index.html', gambars=images)
+    return render_template('popular-scraper.html', gambars=images)
 
 @app.route('/idr-rates')
 def idr_rates():
