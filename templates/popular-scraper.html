@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <!-- read input variable images -->
+    {% for gambar in gambars %}
+        <!-- since we use jinja template we need safe to display content of input variable gambar -->
+        {{gambar|safe}}
+
+        <!-- display title with link. we need safe in jinja -->
+        <a href="{{gambar.find('a')['href']|safe}}">{{gambar.find('a').find('img')['title']|safe}}</a>
+
+    {% endfor %}
+
+{% endblock %}
