@@ -3,3 +3,6 @@ python3 -m venv .venv
 
 run virtual env :
 source .venv/bin/activate
+
+untuk navigation bisa menggunakan bootstrap :
+https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_brand&stacked=h
